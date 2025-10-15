@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension list project</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Extensions List</h1>
+                <div class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+                    <div class="theme-icon">☀️</div>
+                    <div class="theme-icon">🌙</div>
+                    <div class="toggle-circle"></div>
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="inactive">Inactive</button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="extensions-grid">
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your DevLens image -->
+                        <img src="assets/images/logo-devlens.svg" alt="DevLens">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">DevLens</div>
+                        <div class="extension-description">Quickly inspect page layouts and visualize element boundaries.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your JSONWizard image -->
+                        <img src="assets/images/logo-json-wizard.svg" alt="JSONWizard">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">JSONWizard</div>
+                        <div class="extension-description">Formats, validates, and prettifies JSON responses in browser.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item inactive">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your Markup Notes image -->
+                        <img src="assets/images/logo-markup-notes.svg" alt="Markup Notes">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">Markup Notes</div>
+                        <div class="extension-description">Enables annotation and notes directly onto webpages for collaborative debugging.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your LinkChecker image -->
+                        <img src="assets/images/logo-link-checker.svg" alt="LinkChecker">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">LinkChecker</div>
+                        <div class="extension-description">Scans and highlights broken links on any page.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item inactive">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your StyleSpy image -->
+                        <img src="assets/images/logo-style-spy.svg" alt="StyleSpy">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">StyleSpy</div>
+                        <div class="extension-description">Instantly analyze and copy CSS from any webpage element.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your GridGuides image -->
+                        <img src="assets/images/logo-grid-guides.svg" alt="GridGuides">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">GridGuides</div>
+                        <div class="extension-description">Overlay customizable grids and alignment guides on any webpage.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your DOM Snapshot image -->
+                        <img src="assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">DOM Snapshot</div>
+                        <div class="extension-description">Capture and export DOM structures quickly.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item inactive">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your SpeedBoost image -->
+                        <img src="assets/images/logo-speed-boost.svg" alt="SpeedBoost">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">SpeedBoost</div>
+                        <div class="extension-description">Optimizes browser resource usage to accelerate page loading.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your ViewportBuddy image -->
+                        <img src="assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">ViewportBuddy</div>
+                        <div class="extension-description">Simulates various screen resolutions directly within the browser.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item inactive">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your Palette Picker image -->
+                        <img src="assets/images/logo-palette-picker.svg" alt="Palette Picker">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">Palette Picker</div>
+                        <div class="extension-description">Instantly extracts color palettes from any webpage.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your ConsolePlus image -->
+                        <img src="assets/images/logo-console-plus.svg" alt="ConsolePlus">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">ConsolePlus</div>
+                        <div class="extension-description">Enhanced developer console with advanced filtering and logging.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="extension-item inactive">
+                <div class="extension-header">
+                    <div class="extension-image">
+                        <!-- Replace this URL with your TabMaster Pro image -->
+                        <img src="assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro">
+                    </div>
+                    <div class="extension-info">
+                        <div class="extension-name">TabMaster Pro</div>
+                        <div class="extension-description">Organizes browser tabs into groups and sessions.</div>
+                    </div>
+                </div>
+                <div class="extension-footer">
+                    <button class="remove-btn">Remove</button>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <!-- Footer is empty now as requested -->
+        </footer>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
